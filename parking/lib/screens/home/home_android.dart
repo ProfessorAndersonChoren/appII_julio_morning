@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:parking/screens/home/components/vacant_row.dart';
+import 'package:parking/screens/home/components/vacancy_row.dart';
 
 class HomeAndroid extends StatelessWidget {
   const HomeAndroid({super.key});
@@ -30,7 +30,7 @@ class HomeAndroid extends StatelessWidget {
       ),
       body: const Column(
         children: [
-          VacantRow(),
+          VacancyRow(),
         ],
       ),
     );

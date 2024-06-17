@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class VacantRow extends StatelessWidget {
-  const VacantRow({
+class VacancyRow extends StatelessWidget {
+  const VacancyRow({
     super.key,
   });
 
