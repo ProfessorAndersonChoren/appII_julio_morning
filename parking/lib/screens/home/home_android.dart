@@ -13,14 +13,23 @@ class HomeAndroid extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.local_parking),
+            tooltip: 'Vagas',
           ),
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.attach_money),
+            tooltip: 'Faturamento',
           ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.more_vert),
+          PopupMenuButton(
+            tooltip: 'Menu do App',
+            itemBuilder: (context) => [
+              const PopupMenuItem(
+                child: Text('Meu perfil'),
+              ),
+              const PopupMenuItem(
+                child: Text('Configurações'),
+              ),
+            ],
           ),
         ],
       ),
@@ -28,10 +37,13 @@ class HomeAndroid extends StatelessWidget {
         onPressed: () {},
         child: const Icon(Icons.add),
       ),
-      body: const Column(
-        children: [
-          VacancyRow(),
-        ],
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            VacancyRow(),
+          ],
+        ),
       ),
     );
   }

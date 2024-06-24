@@ -7,17 +7,26 @@ class VacancyRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(Icons.local_parking),
-        Column(
+        Image.asset(
+          'assets/parking.png',
+          width: 48,
+        ),
+        const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text('17'),
             Text('Vagas livres'),
           ],
         ),
-        Icon(Icons.local_parking),
-        Column(
+        Image.asset(
+          'assets/parking.png',
+          width: 48,
+        ),
+        const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text('3'),
             Text('Vagas ocupadas'),
