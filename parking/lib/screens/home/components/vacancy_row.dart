@@ -17,7 +17,7 @@ class VacancyRow extends StatelessWidget {
         const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('17'),
+            Text('16'),
             Text('Vagas livres'),
           ],
         ),
@@ -28,7 +28,7 @@ class VacancyRow extends StatelessWidget {
         const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('3'),
+            Text('4'),
             Text('Vagas ocupadas'),
           ],
         ),

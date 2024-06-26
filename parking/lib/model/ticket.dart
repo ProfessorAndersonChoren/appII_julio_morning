@@ -17,5 +17,9 @@ class Ticket {
     required this.entryTime,
     this.departureTime,
     this.amount,
-  });
+  }) {
+    if (vacancy.vehicleType != vehicle.vehicleType) {
+      throw ArgumentError('Tipo de vaga incompatível com o veículo');
+    }
+  }
 }
